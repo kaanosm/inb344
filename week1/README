@@ -1,5 +1,6 @@
 Please set the directory paths accordingly with Parser.java . 
 The default path is set to the CACM archive in local Resources.
 
-Resources/ - The CACM resources
-
+Resources/ 	- The CACM resources
+parse.plot 	- Configuration file for the plot
+parse.txt 	- Parsed frequency list output from Parser.java
