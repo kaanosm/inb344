@@ -1,2 +1,2 @@
 # inb344
-Search Engine Technology
+Repository of Search Engine Technology ( INB344 )
