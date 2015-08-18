@@ -65,4 +65,3 @@ Query  "algorithm NOT rootfinder" matches 	[ Vocabulary size: 19210 ]
 ...
 	Match 1610: CACM-1375.html - 110010000100
 	Match 1611: CACM-1776.html - 110010000101
-
