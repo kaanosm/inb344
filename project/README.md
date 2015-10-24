@@ -114,20 +114,23 @@ Evaluation files for each of the 3 indexes
 * Dirichlet c (mu) parameters
 - dirichlet=(25000 5000 2500 1000 500 1 -1 -500 -1000 -2500 -5000 -25000)
 
-### evaluations.sh 
+#### evaluations.sh 
 * Evaluates all the retrieval using trec_eval tool under /tools/trec_eval.9.0/trec_eval
 * Organizes results under 3 different indexes as indexFolder/evaluations/...
 * Uses qrels.txt file taken from the CLEF 2015 github repository.
 
-### comparisons.sh 
+#### comparisons.sh 
 * Organizes the results/ folders under each index/ folder by moving all the corresponding settings files of the result file in a new settings/ folder before post-processing with sed and evaluation runs.
 * Creates first and last 5 retrievals for comparing incremental results.
 
-### projecttree.sh
+#### projecttree.sh
 * Creates the projecttree file with sizes of each component that was also included in this document.
 
-### comparisons.sh
+#### comparisons.sh
 * Creates first and last 5 retrieval scores for each results file for detailed incremental comparison with unaccurate retrieval runs.
 
-### scriptlog
+#### scriptlog
 * Logs of the entire retrieval process for each of the 3 corresponding indexes.
+
+# Conclusion
+The results achieved can be compared to two solutions of participating teams from CLEF 2015. Team GRIUM implements UMLS Concept Definition and Wikipedia articles while ECNU filters through MeSH medical database that takes it's input from search engine queries that are expanded from baseline queries. The comparison table of our evaluations imply that wikipedia, among all the google queries is the most reliable first stage expansion. To maximize precision, these expansion queries can be post-processed by using MeSH or a similar medical database which has an advanced API for the task.
