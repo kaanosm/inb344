@@ -60,7 +60,7 @@ Below are the charts for P10 precision values taken from the evaluations of all 
 ## Project Tree
 Included is the structure of the project and list of files.
 
- /team3/PROJECT   38G	total without index1
+ /team3/PROJECT   38G	total without index1<br>
  11G	./0<br>
  9.1M	./0/evaluations<br>
  1000K	./0/comparisons<br>
