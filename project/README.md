@@ -43,18 +43,18 @@ as:
 
 |                    |           Precision Score          |                                                                                                                                                               Evaluated results file : Precision Type |
 |--------------------|:----------------------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| Base Queries Top 5 | 0.8136<br> 0.8152<br> 0.8167<br> 0.8182<br> 0.8364 | result_1_LGD_0.5_lowidf-false.ev:P_10  result_1_LGD_1.0_lowidf-false.ev:P_10 result_1_TF_IDF_0.5_lowidf-true.ev:P_10 result_1_InL2_1.75_lowidf-false.ev:P_10 result_1_TF_IDF_0.5_lowidf-false.ev:P_10 |
-| Expansions 1 Top 5 | 0.1031<br> 0.0985<br> 0.0923<br> 0.0800<br> 0.0800 | result_2_LGD_35.0_lowidf-true.ev:P_10 result_2_LGD_35.0_lowidf-false.ev:P_10 result_2_LGD_20.0_lowidf-false.ev:P_10 result_2_LGD_5.0_lowidf-true.ev:P_10 result_2_LGD_5.0_lowidf-false.ev:P_10        |
-| Expansions 2 Top 5 | 0.0877<br> 0.0815<br> 0.0785<br> 0.0785<br> 0.0754 | result_3_LGD_35.0_lowidf-false.ev:P_10 result_3_LGD_20.0_lowidf-false.ev:P_10 result_3_LGD_10.0_lowidf-true.ev:P_10 result_3_LGD_5.0_lowidf-false.ev:P_10 result_3_LGD_5.0_lowidf-true.ev:P_10        |
-| Expansions 3 Top 5 | 0.1121<br> 0.1103<br> 0.1086<br> 0.1086<br> 0.1069 | result_4_LGD_0.25_lowidf-true.ev:P_10 result_4_LGD_0.15_lowidf-true.ev:P_10 result_4_LGD_1.9_lowidf-true.ev:P_10 result_4_LGD_0.1_lowidf-true.ev:P_10 result_4_LGD_3.0_lowidf-true.ev:P_10            |
+| Base Queries Top 5 | 0.8136<br> 0.8152<br> 0.8167<br> 0.8182<br> 0.8364 | result_1_LGD_0.5_lowidf-false.ev:P_10 <br> result_1_LGD_1.0_lowidf-false.ev:P_10<br> result_1_TF_IDF_0.5_lowidf-true.ev:P_10<br> result_1_InL2_1.75_lowidf-false.ev:P_10<br> result_1_TF_IDF_0.5_lowidf-false.ev:P_10 |
+| Expansions 1 Top 5 | 0.1031<br> 0.0985<br> 0.0923<br> 0.0800<br> 0.0800 | result_2_LGD_35.0_lowidf-true.ev:P_10<br> result_2_LGD_35.0_lowidf-false.ev:P_10<br> result_2_LGD_20.0_lowidf-false.ev:P_10<br> result_2_LGD_5.0_lowidf-true.ev:P_10<br> result_2_LGD_5.0_lowidf-false.ev:P_10        |
+| Expansions 2 Top 5 | 0.0877<br> 0.0815<br> 0.0785<br> 0.0785<br> 0.0754 | result_3_LGD_35.0_lowidf-false.ev:P_10<br> result_3_LGD_20.0_lowidf-false.ev:P_10<br> result_3_LGD_10.0_lowidf-true.ev:P_10<br> result_3_LGD_5.0_lowidf-false.ev:P_10<br> result_3_LGD_5.0_lowidf-true.ev:P_10        |
+| Expansions 3 Top 5 | 0.1121<br> 0.1103<br> 0.1086<br> 0.1086<br> 0.1069 | result_4_LGD_0.25_lowidf-true.ev:P_10<br> result_4_LGD_0.15_lowidf-true.ev:P_10<br> result_4_LGD_1.9_lowidf-true.ev:P_10<br> result_4_LGD_0.1_lowidf-true.ev:P_10<br> result_4_LGD_3.0_lowidf-true.ev:P_10            |
 
 
 Below are the charts for P10 precision values taken from the evaluations of all retrieval runs for only the first queries and expanded queries with stemming and stopwords indexes using the following filter:
 * (grep "P_10 " * | awk '{ print $3 "  " $1 }' | sort) >> ../../0-stopwords-stem-P10-evaluations
 
 * Some of the retrieval models accept negative values so parameters include 3 negative values for comparisons. First chart includes only the models that accept such parameters, second one includes infinite and not defined values ( about 1000 more runs with 0 precision )
-![alt text](http://s2.postimg.org/bv4acyls7/p10_1.png "All P10 Evaluations of Baseline Query Retrievals ( 1040 Runs )")
-![alt text](http://s2.postimg.org/bv4acyls7/p10_1.png "All P10 Evaluations of Expanded Queries ( ~2000 Runs )")
+![alt text](https://github.com/kaanosm/inb344/blob/master/project/p10-1.png "All P10 Evaluations of Baseline Query Retrievals ( 1040 Runs )")
+![alt text](https://github.com/kaanosm/inb344/blob/master/project/p10-2.png "All P10 Evaluations of Expanded Queries ( ~2000 Runs )")
 
 
 ## Project Tree
@@ -66,7 +66,7 @@ Included is the structure of the project and list of files.
  1000K	./0/comparisons
  8.2G	./0/results
  3.4M	./0/results/settings
-2
+
  11G	./0-stopwords
  9.0M	./0-stopwords/evaluations
  1000K	./0-stopwords/comparisons
@@ -98,18 +98,19 @@ Evaluation files for each of the 3 indexes
 * Currently toggles only 9 of the 19 included retrieval models for retrieval but all of them can be activated. Other 10 uses different parameters that have been included within the file.
 * Creates a scriptlog for the whole process in the project folder.
 * Retrieves the results for each index in corresponding folder as shown below;
-⋅⋅* 0/results/...
-⋅⋅* 0-stopwords/results/...
-⋅⋅* 0-stopwords-stem/results/...
+
+* 0/results/...
+* 0-stopwords/results/...
+* 0-stopwords-stem/results/...
 
 ##### The default 'c' parameters ( term frequency normalisation )
 * c=(-5.0 -2.0 0.05 0.1 0.15 0.25 0.5 1.0 1.5 1.75 1.9 3.0 5.0 10.0 20.0 35.0)
 
 ##### The secondary parameters ( mu for Dirichlet Smoothing, b for BM25 etc... )
-⋅⋅* BM25 => b - 0.01, 0.1 ....  0.75 .... 1.75  (exponential after 1.75)
-⋅⋅* Hiemstra parameters - Default = 0.15
+* BM25 => b - 0.01, 0.1 ....  0.75 .... 1.75  (exponential after 1.75)
+* Hiemstra parameters - Default = 0.15
 - hiemstra=(0.03 0.1 0.15 0.2 0.5 0.75 0.99) 
-⋅⋅* Dirichlet c (mu) parameters
+* Dirichlet c (mu) parameters
 - dirichlet=(25000 5000 2500 1000 500 1 -1 -500 -1000 -2500 -5000 -25000)
 
 ### evaluations.sh 
