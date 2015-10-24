@@ -1,0 +1,28 @@
+#!/bin/bash
+
+wrk="/Users/team3/PROJECT/"
+cd $wrk
+
+indexfolders=("0/" "0-stopwords/" "0-stopwords-stem/")
+
+#move all settings files from ${indexFolders}
+
+for i in ${indexfolders[@]}; do
+	cd "${wrk}${i}results/"
+	echo In folder "${wrk}${i}results"
+
+	# Clear folder. Move settings files into settings folder
+	[[ ! -d settings ]] && ( mkdir settings && find . -name '*.settings' -exec mv '{}' ./settings/ \; )
+
+	# Generate 20 lines of head and tail for comparisons and charting
+	list=(./*)  # All results files
+	[[ ! -d ../comparisons ]] && mkdir -p "${wrk}${i}comparisons/"
+
+	cmp="../comparisons/cmp.txt"
+	[ -e $cmp ] && rm $cmp && echo "Updating comparison file $cmp"
+	for f in ${list[@]}; do
+		if [ -f "$f" ]; then
+			(head -n5; echo;tail -n5; echo;echo) < $f >> ../comparisons/cmp.txt
+		fi
+	done
+done

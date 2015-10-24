@@ -1,0 +1,18 @@
+set title "P10 vs. Models"
+set xlabel "Model"
+set ylabel "P10"
+
+set style fill transparent solid 0.2 noborder
+
+set output 'plot.png'
+set xtics rotate
+set key outside right center
+
+set xrange[0:1046]
+#set xtics 0, 100, 1000
+set xtics auto
+set style fill solid border -1 
+
+plot 		'filtered-P10-evaluations' u 1 with line
+
+pause -1

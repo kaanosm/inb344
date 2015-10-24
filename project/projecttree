@@ -1,0 +1,22 @@
+ 38G	.
+ 11G	./0
+ 9.1M	./0/evaluations
+ 1000K	./0/comparisons
+ 8.2G	./0/results
+ 3.4M	./0/results/settings
+
+ 11G	./0-stopwords
+ 9.0M	./0-stopwords/evaluations
+ 1000K	./0-stopwords/comparisons
+ 8.1G	./0-stopwords/results 
+ 3.4M	./0-stopwords/results/settings
+
+ 16G	./0-stopwords-stem
+ 9.0M	./0-stopwords-stem/evaluations
+ 1000K	./0-stopwords-stem/comparisons
+ 7.8G	./0-stopwords-stem/results
+ 4.5M	./0-stopwords-stem/results/settings
+
+ 32K	./queries
+ 
+ 38G	total
