@@ -52,7 +52,7 @@ as:
 Below are the charts for P10 precision values taken from the evaluations of all retrieval runs for only the first queries and expanded queries with stemming and stopwords indexes using the following filter:
 * (grep "P_10 " * | awk '{ print $3 "  " $1 }' | sort) >> ../../0-stopwords-stem-P10-evaluations
 
-* Some of the retrieval models accept negative values so parameters include 3 negative values for comparisons. First chart includes only the models that accept such parameters, second one includes infinite and not defined values ( about 1000 more runs with 0 precision )
+* Some of the retrieval models accept negative values so parameters include 3 negative values for comparisons. First chart doesn't include the models that doesn't accept inverse smoothing parameters, second one includes all of them together with infinite/not defined values ( about 1000 more runs with 0 precision )
 ![alt text](https://github.com/kaanosm/inb344/blob/master/project/p10-1.png "All P10 Evaluations of Baseline Query Retrievals ( 1040 Runs )")
 ![alt text](https://github.com/kaanosm/inb344/blob/master/project/p10-2.png "All P10 Evaluations of Expanded Queries ( ~2000 Runs )")
 
