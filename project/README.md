@@ -61,25 +61,25 @@ Below are the charts for P10 precision values taken from the evaluations of all 
 Included is the structure of the project and list of files.
 
  /team3/PROJECT   38G	total without index1
- 11G	./0
- 9.1M	./0/evaluations
- 1000K	./0/comparisons
- 8.2G	./0/results
- 3.4M	./0/results/settings
-
- 11G	./0-stopwords
- 9.0M	./0-stopwords/evaluations
- 1000K	./0-stopwords/comparisons
- 8.1G	./0-stopwords/results 
- 3.4M	./0-stopwords/results/settings
-
- 16G	./0-stopwords-stem
- 9.0M	./0-stopwords-stem/evaluations
- 1000K	./0-stopwords-stem/comparisons
- 7.8G	./0-stopwords-stem/results
- 4.5M	./0-stopwords-stem/results/settings
-
- 32K	./queries
+ 11G	./0<br>
+ 9.1M	./0/evaluations<br>
+ 1000K	./0/comparisons<br>
+ 8.2G	./0/results<br>
+ 3.4M	./0/results/settings<br>
+<br>
+ 11G	./0-stopwords<br>
+ 9.0M	./0-stopwords/evaluations<br>
+ 1000K	./0-stopwords/comparisons<br>
+ 8.1G	./0-stopwords/results<br> 
+ 3.4M	./0-stopwords/results/settings<br>
+<br>
+ 16G	./0-stopwords-stem<br>
+ 9.0M	./0-stopwords-stem/evaluations<br>
+ 1000K	./0-stopwords-stem/comparisons<br>
+ 7.8G	./0-stopwords-stem/results<br>
+ 4.5M	./0-stopwords-stem/results/settings<br>
+<br>
+ 32K	./queries<br>
 
 
 ## evaluations/
@@ -90,7 +90,7 @@ Evaluation files for each of the 3 indexes
 
 ## expands/
 - expands.0.txt	- First query expansions that includes all methods
-- expands.1.txt	- Second query expansions that include only some mainstream medical datasets (Pubmed, MDhealth and wiki)
+- expands.1.txt	- Se1cond query expansions that include only some mainstream medical datasets (Pubmed, MDhealth and wiki)
 - expands.2.txt	- Third query expansions that includes wikipedia dataset only
 
 ## scripts/
