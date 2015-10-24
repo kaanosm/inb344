@@ -88,7 +88,8 @@ Evaluation files for each of the 3 indexes
 - evaluations-stopwords/ 			: Evaluations of retrievals for index 0-stopwords ( Only stopwords ) 
 - evaluations-stopwords-stemming/	: Evaluations of retrievals for index 0-stopwords-stem ( PorterStemming and stopwords )
 
-## expands/
+## queries/
+- queries.txt
 - expands.0.txt	- First query expansions that includes all methods
 - expands.1.txt	- Se1cond query expansions that include only some mainstream medical datasets (Pubmed, MDhealth and wiki)
 - expands.2.txt	- Third query expansions that includes wikipedia dataset only
