@@ -41,12 +41,12 @@ as:
 ⋅⋅* Expansions from: Webmd, Wikipedia, pubmed
 ⋅⋅* Expansions from: Wikipedia
 
-|                    	|           Precision Score          	|                                                                                                                                                               Evaluated results file : Precision Type 	|
-|--------------------	|:----------------------------------:	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
-| Base Queries Top 5 	| 0.8136 0.8152 0.8167 0.8182 0.8364 	| result_1_LGD_0.5_lowidf-false.ev:P_10  result_1_LGD_1.0_lowidf-false.ev:P_10 result_1_TF_IDF_0.5_lowidf-true.ev:P_10 result_1_InL2_1.75_lowidf-false.ev:P_10 result_1_TF_IDF_0.5_lowidf-false.ev:P_10 	|
-| Expansions 1 Top 5 	| 0.1031 0.0985 0.0923 0.0800 0.0800 	| result_2_LGD_35.0_lowidf-true.ev:P_10 result_2_LGD_35.0_lowidf-false.ev:P_10 result_2_LGD_20.0_lowidf-false.ev:P_10 result_2_LGD_5.0_lowidf-true.ev:P_10 result_2_LGD_5.0_lowidf-false.ev:P_10        	|
-| Expansions 2 Top 5 	| 0.0877 0.0815 0.0785 0.0785 0.0754 	| result_3_LGD_35.0_lowidf-false.ev:P_10 result_3_LGD_20.0_lowidf-false.ev:P_10 result_3_LGD_10.0_lowidf-true.ev:P_10 result_3_LGD_5.0_lowidf-false.ev:P_10 result_3_LGD_5.0_lowidf-true.ev:P_10        	|
-| Expansions 3 Top 5 	| 0.1121 0.1103 0.1086 0.1086 0.1069 	| result_4_LGD_0.25_lowidf-true.ev:P_10 result_4_LGD_0.15_lowidf-true.ev:P_10 result_4_LGD_1.9_lowidf-true.ev:P_10 result_4_LGD_0.1_lowidf-true.ev:P_10 result_4_LGD_3.0_lowidf-true.ev:P_10            	|
+|                    |           Precision Score          |                                                                                                                                                               Evaluated results file : Precision Type |
+|--------------------|:----------------------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Base Queries Top 5 | 0.8136 0.8152 0.8167 0.8182 0.8364 | result_1_LGD_0.5_lowidf-false.ev:P_10  result_1_LGD_1.0_lowidf-false.ev:P_10 result_1_TF_IDF_0.5_lowidf-true.ev:P_10 result_1_InL2_1.75_lowidf-false.ev:P_10 result_1_TF_IDF_0.5_lowidf-false.ev:P_10 |
+| Expansions 1 Top 5 | 0.1031 0.0985 0.0923 0.0800 0.0800 | result_2_LGD_35.0_lowidf-true.ev:P_10 result_2_LGD_35.0_lowidf-false.ev:P_10 result_2_LGD_20.0_lowidf-false.ev:P_10 result_2_LGD_5.0_lowidf-true.ev:P_10 result_2_LGD_5.0_lowidf-false.ev:P_10        |
+| Expansions 2 Top 5 | 0.0877 0.0815 0.0785 0.0785 0.0754 | result_3_LGD_35.0_lowidf-false.ev:P_10 result_3_LGD_20.0_lowidf-false.ev:P_10 result_3_LGD_10.0_lowidf-true.ev:P_10 result_3_LGD_5.0_lowidf-false.ev:P_10 result_3_LGD_5.0_lowidf-true.ev:P_10        |
+| Expansions 3 Top 5 | 0.1121 0.1103 0.1086 0.1086 0.1069 | result_4_LGD_0.25_lowidf-true.ev:P_10 result_4_LGD_0.15_lowidf-true.ev:P_10 result_4_LGD_1.9_lowidf-true.ev:P_10 result_4_LGD_0.1_lowidf-true.ev:P_10 result_4_LGD_3.0_lowidf-true.ev:P_10            |
 
 
 Below are the charts for P10 precision values taken from the evaluations of all retrieval runs for only the first queries and expanded queries with stemming and stopwords indexes using the following filter:
