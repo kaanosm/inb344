@@ -31,7 +31,10 @@ The P10 evaluations above are created by:
 ## Project Solution ( Query Expansion )
 ##### Solution.java
 Included query expansion java class used for query expansions. Run by a java IDE with required dependencies such as Jsoup. 
-Below is a brief description of the methods;
+Below is a brief description of the methods:
+
+readQueries() - Returns a list of the queries read from a query file from the Desktop, change the Path accordingly.
+writeQueries() - 
 
 # Evaluations
 Below are the top5 results for the base queries provided, together with 3 different types of query expansions that filter expansions
